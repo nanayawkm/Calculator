@@ -11,17 +11,12 @@ export default class UserForm extends Component {
         }
     }
 
-handleChange = (e) => {
-    e.preventDefault()
-    this.setState({[e.target.name] : e.target.value})
-    
-}
 
 handleSubmit = (e) => {
     e.preventDefault()
-    this.props.addUser(this.state)
+  
     this.setState({
-        name: '',
+        name: '', 
         email:'',
         gen:''
     })
@@ -45,7 +40,7 @@ handleSubmit = (e) => {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Gen</Form.Label>
-        <Form.Control type="number" placeholder="Gen" name='gen' value={this.state.gen} onChange={this.handleChange} />
+        <Form.Control type="number" placeholder="Enter Gen" name='gen' value={this.state.gen} onChange={this.handleChange} />
       </Form.Group>
       <Button variant="primary" type="submit">
         Submit

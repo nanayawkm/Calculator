@@ -7,10 +7,10 @@ const User = (props) => {
         
       <Card>
         <Card.Body>
-          <Card.Title>{props.userInfo.name}</Card.Title>
+          <Card.Title>Name: {props.userInfo.name}</Card.Title>
           <Card.Text>
-           <p>{props.userInfo.email}</p>
-           <p>{props.userInfo.gen}</p>
+           <p>Email: {props.userInfo.email}</p>
+           <p>Gen: {props.userInfo.gen}</p>
           </Card.Text>
         </Card.Body>
       </Card>

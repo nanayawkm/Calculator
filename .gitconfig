@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = nanayawkm
+	email = nanayawkm1634@gmail.com\n
+[gui]
+	recentrepo = C:/Users/Nanayawkm/git-practice
